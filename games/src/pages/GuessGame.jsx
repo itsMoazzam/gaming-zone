@@ -11,7 +11,7 @@ const Guess = () => {
     <>
       <NavbarGuessGames />
       <Routes>
-        <Route index element={<GuessWordGame />} />
+        <Route path="guess-word-game" element={<GuessWordGame />} />
         <Route path="guess-game" element={<GuessGame />} />
         <Route path="wordle-game" element={<WordleGame />} />
         <Route path="hangman-game" element={<Hangman />} />

@@ -9,16 +9,12 @@ import NavbarPuzzle from "../components/puzzle/NavbarPuzzle";
 const Puzzle = () => {
   return (
     <>
+      <NavbarPuzzle />
       <Routes>
-        <NavbarPuzzle />
-        <Route path="gaming-zone/guess-word-game" element={<MemoryGame />} />
-        <Route path="gaming-zone/guess-game" element={<SlidingPuzzle />} />
-        <Route path="gaming-zone/wordle-game" element={<SudokuSolver />} />
-        <Route path="gaming-zone/hangman-game" element={<TicTacToeAI />} />
-        <Route
-          path="gaming-zone/rock-paper-scissors-game"
-          element={<RockPaperScissors />}
-        />
+        <Route path="memory-card" element={<MemoryGame />} />
+        <Route path="sliding-game" element={<SlidingPuzzle />} />
+        <Route path="sudoku-solver" element={<SudokuSolver />} />
+        <Route path="tic-tac-toe-ai" element={<TicTacToeAI />} />
       </Routes>
     </>
   );
